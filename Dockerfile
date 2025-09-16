@@ -1,5 +1,5 @@
 # Use OpenJDK as base (Minecraft requires Java 17+)
-FROM openjdk:17-jdk-slim
+FROM openjdk:21-jdk-slim
 
 # 2. Setze das Arbeitsverzeichnis im Container
 WORKDIR /app
