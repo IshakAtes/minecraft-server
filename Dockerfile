@@ -10,9 +10,9 @@ COPY . $WORKDIR
 RUN echo "eula=true" > eula.txt
 
 # Default Environment Variablen (not Critical)
-ENV MAX_MEMORY=${MAX_MEMORY:-2G} \
-    MIN_MEMORY=${MIN_MEMORY:-1G} \
-    MOTD=${MOTD:-"My Dockerized Minecraft Server"}
+ENV MAX_MEMORY=2G \
+    MIN_MEMORY=1G \
+    MOTD="My Dockerized Minecraft Server"
 
 EXPOSE 25565
 
