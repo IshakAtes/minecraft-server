@@ -1,0 +1,16 @@
+# Ignore Docker-related files
+Dockerfile
+docker-compose.yaml
+.dockerignore
+.git
+.gitignore
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore local Minecraft data
+data/
+logs/
+crash-reports/
+*.log
