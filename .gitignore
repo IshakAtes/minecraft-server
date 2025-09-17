@@ -43,7 +43,6 @@ Thumbs.db
 data/
 docker-compose.override.yml
 docker-data/
-*.yaml
 
 # Minecraft server files
 world/

@@ -1,0 +1,18 @@
+services:
+  mc-server:
+    build: .
+    container_name: minecraft-server
+    ports:
+      - "${SERVER_PORT}:25565" # Host port : Internal Minecraft Container port
+    environment:
+      MAX_MEMORY: "${MAX_MEMORY}"
+      MIN_MEMORY: "${MIN_MEMORY}"
+      MOTD: "${MOTD}"
+      MAX_PLAYERS: "${MAX_PLAYERS}"
+      WORLD_NAME: "${WORLD_NAME}"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+
+volumes:
+  data:
