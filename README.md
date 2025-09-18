@@ -142,9 +142,13 @@ ping: 77.94 ms
 
 ---
 
-### Data persistence
+## Data persistence
 The `./data` volume ensures that:
 - worlds
 - configurations
 - progress
 are not lost when containers are stopped or restarted.
+
+## Conclusion
+With this setup, you can easily deploy, configure, and test a Minecraft server inside Docker.  
+The use of `.env` ensures flexibility, Docker volumes guarantee data persistence, and `mcstatus` allow to verify that the server is running correctly.  
