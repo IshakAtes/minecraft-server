@@ -2,8 +2,6 @@
 
 This project describes how to host a Minecraft server on a cloud VM using Docker Compose and how to test it using `mcstatus`.
 
----
-
 ## Table of Contents
 - [Description](#description)
 - [Quickstart](#quickstart)
@@ -14,8 +12,6 @@ This project describes how to host a Minecraft server on a cloud VM using Docker
 - [Testing](#2-testing-the-server-with-mcstatus)
   - [Testing steps](#steps-1)
 - [Data persistence](#data-persistence)
-
----
 
 ## Description
 
@@ -28,8 +24,6 @@ It includes:
 - `README.md` → documentation (this file)
 
 The goal is to have a **persistent, configurable, and portable Minecraft server**, which can be hosted in the cloud and tested programmatically.
-
----
 
 ## Quickstart
 ```bash
@@ -50,11 +44,6 @@ docker ps
 <CLOUD_VM_IP>:<SERVER_PORT>
 ```
 
----
-
-
-
-
 ## Usage
 
 ### Requirements
@@ -62,8 +51,8 @@ docker ps
 - SSH access to the VM
 - Minecraft server `.jar` file placed in the repository folder
 
-
 ### Steps
+---
 1. Clone the repository:
 ```bash
 git clone https://github.com/IshakAtes/minecraft-server.git
@@ -151,6 +140,7 @@ ping: 77.94 ms
 > [!NOTE]
 > Alternatively, connect with a Minecraft Java client using <CLOUD_VM_IP>:<EXAMPLE_PORT_5000>.
 
+---
 
 ### Data persistence
 The `./data` volume ensures that:
