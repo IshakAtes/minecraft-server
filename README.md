@@ -13,6 +13,7 @@ This project describes how to host a Minecraft server on a cloud VM using Docker
   - [Testing steps](#steps-1)
 - [Data persistence](#data-persistence)
 - [Conclusion](#conclusion)
+- [Video Walkthrough](#demo-video)
 
 ## Description
 
@@ -153,3 +154,7 @@ are not lost when containers are stopped or restarted.
 ## Conclusion
 With this setup, you can easily deploy, configure, and test a Minecraft server inside Docker.  
 The use of `.env` ensures flexibility, Docker volumes guarantee data persistence, and `mcstatus` allow to verify that the server is running correctly.  
+
+## Demo Video
+You can watch a short demo of the Minecraft server setup here:  
+[🎥 Watch the video](https://go.screenpal.com/watch/cTQFqpnDcq4)
