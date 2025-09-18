@@ -12,6 +12,7 @@ This project describes how to host a Minecraft server on a cloud VM using Docker
 - [Testing](#2-testing-the-server-with-mcstatus)
   - [Testing steps](#steps-1)
 - [Data persistence](#data-persistence)
+- [Conclusion](#conclusion)
 
 ## Description
 
