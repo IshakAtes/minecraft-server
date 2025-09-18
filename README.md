@@ -11,9 +11,9 @@ This project describes how to host a Minecraft server on a cloud VM using Docker
   - [Requirements](#requirements)
   - [Steps to Start a Dockerized Minecraft Server](#steps)
   - [Start and rebuild, important note](#notes)
-  - [Data persistence](#data-persistence)
 - [Testing](#2-testing-the-server-with-mcstatus)
   - [Testing steps](#steps-1)
+- [Data persistence](#data-persistence)
 
 ---
 
@@ -74,7 +74,8 @@ cd minecraft-server
 ``` bash
 nano .env
 ```
-> [!NOTE] The `.env` file controls server configuration. Example:
+> [!NOTE]
+> The `.env` file controls server configuration. Example:
 ``` bash
 # Port on which the server is reachable from the host
 SERVER_PORT=5000
@@ -118,13 +119,6 @@ docker compose up -d --build
 docker image prune -a
 ```
 
-### Data persistence
-The `./data` volume ensures that:
-- worlds
-- configurations
-- progress
-are not lost when containers are stopped or restarted.
-
 
 ## 2. Testing the Server with mcstatus
 
@@ -156,3 +150,11 @@ ping: 77.94 ms
 
 > [!NOTE]
 > Alternatively, connect with a Minecraft Java client using <CLOUD_VM_IP>:<EXAMPLE_PORT_5000>.
+
+
+### Data persistence
+The `./data` volume ensures that:
+- worlds
+- configurations
+- progress
+are not lost when containers are stopped or restarted.
