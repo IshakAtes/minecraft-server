@@ -1,7 +1,7 @@
 # Dockerized Minecraft Server Setup & Testing with mcstatus
 
-Guide:
-[Link to Pdf Checklist](https://github.com/IshakAtes/minecraft-server/blob/fd56ec501ca8cbfd9e302e6ca9fdcec80030458c/Minecraft%20Server%20Checkliste.pdf)
+**Guide**:<br>
+[Link to Pdf Checklist](https://github.com/IshakAtes/minecraft-server/blob/fd56ec501ca8cbfd9e302e6ca9fdcec80030458c/Minecraft%20Server%20Checkliste.pdf)<br><br>
 This project describes how to host a Minecraft server on a cloud VM using Docker Compose and how to test it using `mcstatus`.
 
 ## Table of Contents
