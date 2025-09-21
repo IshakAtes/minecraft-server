@@ -1,19 +1,19 @@
 # Dockerized Minecraft Server Setup & Testing with mcstatus
 
+Guide:
+[Pdf Checkliste]()
 This project describes how to host a Minecraft server on a cloud VM using Docker Compose and how to test it using `mcstatus`.
 
 ## Table of Contents
 - [Description](#description)
 - [Quickstart](#quickstart)
 - [Usage](#usage)
-  - [Requirements](#requirements)
   - [Steps to Start a Dockerized Minecraft Server](#steps)
   - [Start and rebuild, important note](#notes)
 - [Testing](#2-testing-the-server-with-mcstatus)
   - [Testing steps](#steps-1)
 - [Data persistence](#data-persistence)
 - [Conclusion](#conclusion)
-- [Video Walkthrough](#demo-video)
 
 ## Description
 
@@ -34,7 +34,7 @@ git clone https://github.com/IshakAtes/minecraft-server.git
 cd minecraft-server
 
 # 2. Create .env file
-nano .env
+cp example.env .env
 
 # 3. Start server
 docker compose up -d
@@ -48,25 +48,14 @@ docker ps
 
 ## Usage
 
-### Requirements
-- Cloud VM with Docker and Docker Compose installed
-- SSH access to the VM
-- Minecraft server `.jar` file placed in the repository folder
-
 ### Steps
 ---
-1. Clone the repository:
-```bash
-git clone https://github.com/IshakAtes/minecraft-server.git
-cd minecraft-server
-```
-
-2. Create and configure the `.env` file:
+**Create and configure the `.env` file:**
 ``` bash
-nano .env
+cp example.env .env
 ```
 > [!NOTE]
-> The `.env` file controls server configuration. Example:
+> The `.env` file controls server configuration.
 ``` bash
 # Port on which the server is reachable from the host
 SERVER_PORT=5000
@@ -85,13 +74,13 @@ WORLD_NAME=mc_world
 ```
 
 
-3. Start the Minecraft server:
+**Start the Minecraft server:**
 ``` bash
 docker compose up -d --build
 ```
 
 
-4. Check if the server is running:
+**Check if the server is running:**
 ``` bash
 docker ps
 ```
@@ -154,7 +143,3 @@ are not lost when containers are stopped or restarted.
 ## Conclusion
 With this setup, you can easily deploy, configure, and test a Minecraft server inside Docker.  
 The use of `.env` ensures flexibility, Docker volumes guarantee data persistence, and `mcstatus` allow to verify that the server is running correctly.  
-
-## Demo Video
-You can watch a short demo of the Minecraft server setup here:  
-[🎥 Watch the video](https://go.screenpal.com/watch/cTQFqpnDcq4)
