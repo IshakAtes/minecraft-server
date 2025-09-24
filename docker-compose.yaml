@@ -1,0 +1,14 @@
+services:
+  mc-server:
+    build: .
+    container_name: minecraft-server
+    ports:
+      - "${SERVER_PORT:5000}:25565" # Host port : Internal Minecraft Container port
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+
+volumes:
+  data:

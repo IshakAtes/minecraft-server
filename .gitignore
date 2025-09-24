@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.so
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+
+# Environment files
+.env
+*.env.*
+
+# Django
+*.log
+db.sqlite3
+media/
+staticfiles/
+static/
+
+# Migrations (optional, falls du sie nicht tracken willst)
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# VSCode / PyCharm / IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+*.seed
+*.bak
+data/
+docker-compose.override.yml
+docker-data/
+
+# Minecraft server files
+world/
+logs/
+crash-reports/
+eula.txt
+server.properties
